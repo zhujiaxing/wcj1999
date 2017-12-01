@@ -1,0 +1,114 @@
+.subpage4{
+	background: url(../img/bg.png) #945c4c;
+}
+/*标题*/
+.subpage4-title{
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	text-align: center;
+	font-size: 24px;
+	color: #FFF;
+}
+/*屏幕缩小 1366时候标题距顶部距离*/
+@media screen and (max-width:1366px){
+	.subpage4-title{top: 70px;}
+}
+@media screen and (max-width:600px){
+	.subpage4-title{top: 35px;font-size: 16px;}
+}
+.subpage4-content{
+	margin: 0 auto;
+	position: absolute;
+	/*top: 250px;*/
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/*屏幕缩小 1366时候标题距顶部距离*/
+@media screen and (max-width:1366px){
+	.subpage4-content{top:150px;}
+}
+/*屏幕缩小 600时候标题距顶部距离*/
+@media screen and (max-width:600px){
+	.subpage4-content{top: 80px;}
+}
+.subpage4-box{
+	width: 750px;
+	height: 350px;
+	background: #F2F4F5;
+	margin: 0 auto;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	color: #000;
+	overflow: hidden;
+	box-shadow: 0 0 25px rgba(0,0,0,.5);
+	display: flex;
+	align-items: center;
+}
+/*屏幕缩小 620时候标题距左右距离*/
+@media screen and (max-width:620px){
+	.subpage4-box{width: 90%;height: 80%;}
+}
+.subpage4-left{
+    background-size: auto auto;
+	background-size: 55%;
+	width: 30%;
+	height: 70%;
+	-webkit-transform: translateZ(50px);
+	transform: translateZ(50px);
+	background: url(../images/h5.png)center center no-repeat;;
+}
+
+/*屏幕缩小 620时候文字隐藏*/
+@media screen and (max-width:620px){
+	.subpage4-left{display: none;}
+}
+.subpage4-list{
+	width:50%;
+	height:55%;
+	margin: 0 auto;
+	line-height: 30px;
+	font-size: 16px;
+	position: relative;
+	margin: 0 auto;
+	font-style: oblique;
+}
+.subpage4-list li:nth-child(1){
+	color: #FF0000;
+}
+.subpage4-list li:nth-child(2){
+	color: #FF7F00;
+}
+.subpage4-list li:nth-child(3){
+	color: #8B00FF;
+}
+.subpage4-list li:nth-child(4){
+	color: #00FF00;
+}
+.subpage4-list li:nth-child(5){
+	color:  #0000FF;
+}
+/*屏幕缩小 430时候文字隐藏*/
+@media screen and (max-width:430px){
+	.subpage4-list{font-size: 12px;}
+}
+/*屏幕缩小 600时候高度改变*/
+@media screen and (max-width:620px){
+	.subpage4-list{height: 83%;}
+}
+/*屏幕缩小 320时候文字缩小 宽高改变*/
+@media screen and (max-width:320px){
+	.subpage4-list{font-size: 12px;width: 77%;height: 85%;}
+}
+
+.subpage4-text{
+	color: #FFF;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 40px;
+}
+/*屏幕缩小 520时候文字隐藏*/
+@media screen and (max-width:520px){
+	.subpage4-text{display: none;}
+}

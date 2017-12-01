@@ -1,0 +1,119 @@
+.subpage2{
+	background: url(../img/bg.png) #109085;
+}
+/*标题*/
+.subpage2-title{
+	position: absolute;
+	top: 150px;
+	left: 20%;
+	right: 20%;
+	text-align: center;
+	font-size: 24px;
+	color: #FFF;
+}
+/*屏幕缩小 1366时候标题距顶部距离*/
+@media screen and (max-width:1366px){
+	.subpage2-title{top: 70px;}
+}
+@media screen and (max-width:600px){
+	.subpage2-title{top: 35px;font-size: 16px;}
+}
+.subpage2-content{
+	position: absolute;
+	top: 250px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/*屏幕缩小 1366时候标题距顶部距离*/
+@media screen and (max-width:1366px){
+	.subpage2-content{top:160px;}
+}
+/*屏幕缩小 600时候标题距顶部距离*/
+@media screen and (max-width:600px){
+	.subpage2-content{top:80px;}
+}
+/*icon 信息*/
+.subpage2-list{
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	font-size: 18px;
+	list-style: none;
+}
+.cont-img{
+	width: 90px;
+	height: 90px;
+	cursor: pointer;
+	background: rgba(255,255,255,.1);
+	border-radius: 50%;
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform ease-out .1s,background .2s；
+}
+/*屏幕缩小 600时候标题包裹图片DIV缩小*/
+@media screen and (max-width:600px){
+	.cont-img{width: 50px;height: 50px;}
+}
+.cont-img>img{
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translateY(-50%) translateX(50%);
+}
+.cont-img::after{
+	content: '';
+	position: absolute;
+	box-shadow: 0 0 0 2px rgba(255,255,255,.1);
+	opacity: 0;
+	transform: scale(.9);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.cont-img:hover{
+	background: rgba(255,255,255,.05);
+	transform: scale(.93);
+	color: #fff;
+}
+.list-item{
+	width: 100px;
+	margin: 0 20px;
+}
+/*屏幕缩小 420时候增加底部边距*/
+@media screen and (max-width:420px){
+	.list-item{padding-bottom: 20px;}
+}
+.cont-text{
+	text-align: center;
+	margin-top: 20px;
+	color: #FFF;
+}
+/*屏幕缩小 600时候span字体缩小*/
+@media screen and (max-width:600px){
+	.cont-text{font-size: 12px;}
+}
+.subpage2-text{
+	text-align: center;
+	line-height: 24px;
+	padding-top: 50px;
+	font-size: 18px;
+	color: #FFF;
+}
+/*屏幕缩小 420的时候距上减小*/
+@media screen and (max-width: 420px){
+	.subpage2-text{padding-top: 0px;}
+}
+.subpage2-text p{
+	margin: 18px 0;
+}
+/*屏幕缩小 600的时候文字变小*/
+@media screen and (max-width: 600px){
+	.subpage2-text p{line-height: 16px;font-size: 14px;}
+}
